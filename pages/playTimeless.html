@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arvutan Peast</title>
+        <link rel="icon" href="#">
+        <link rel="stylesheet" href="/styles/playTimeless.css">
+        <script type="module" src="/scripts/playTimeless.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><button id="quit-button">Avalehele</button></a>
+        </header>
+        <div id="content">
+            <div class="game-info">
+                <p class="info" id="user-score-text">Punktide arv: </p>
+                <p class="info" id="user-score">0</p>
+                <button id="error-button">Näita vigu</button>
+            </div>
+            <div class="task-info">
+                <p class="info" id="task"></p>
+                <p class="info" id="answer"></p>
+            </div>
+            <div class="keyboard">
+                <div class="numpad">
+                    <div class="row">
+                        <button class="number" id="seven">7</button>
+                        <button class="number" id="eight">8</button>
+                        <button class="number" id="nine">9</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" id="four">4</button>
+                        <button class="number" id="five">5</button>
+                        <button class="number" id="six">6</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" id="one">1</button>
+                        <button class="number" id="two">2</button>
+                        <button class="number" id="three">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" id="zero">0</button>
+                        <button class="number" id="minus">-</button>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button class="action-button" id="erase">←</button>
+                    <button class="action-button" id="check">OK</button>
+                </div>
+            </div>
+            <dialog id="error-dialog">
+                <p class="error">Ülesanne = Tegelik vastus (antud vastus)</p>
+                <button id="back-button">Sulge</button>
+            </dialog>
+        </div>
+    </body>
+    <footer></footer>
+</html>

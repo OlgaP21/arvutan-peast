@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arvutan Peast</title>
+        <link rel="icon" href="#">
+        <link rel="stylesheet" href="/styles/playTimed.css">
+        <script type="module" src="/scripts/playTimed.js"></script>
+    </head>
+    <body>
+        <header>
+            <button id="quit-button">Avalehele</button>
+        </header>
+        <div id="content">
+            <div class="game-info">
+                <p class="info" id="user-score"></p>
+                <p class="info" id="slash">/</p>
+                <p class="info" id="needed-score"></p>
+                <p class="info" id="timer"></p>
+            </div>
+            <div class="task-info">
+                <p class="info" id="task"></p>
+                <p class="info" id="answer"></p>
+            </div>
+            <div class="keyboard">
+                <div class="numpad">
+                    <div class="row">
+                        <button class="number" id="seven">7</button>
+                        <button class="number" id="eight">8</button>
+                        <button class="number" id="nine">9</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" id="four">4</button>
+                        <button class="number" id="five">5</button>
+                        <button class="number" id="six">6</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" id="one">1</button>
+                        <button class="number" id="two">2</button>
+                        <button class="number" id="three">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="number" id="zero">0</button>
+                        <button class="number" id="minus">-</button>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button class="action-button" id="erase">←</button>
+                    <button class="action-button" id="check">OK</button>
+                </div>
+            </div>
+            <dialog id="game-end-dialog">
+                <p class="game-end-text">Tubli!</p>
+                <p class="game-end-text" id="stats-level"></p>
+                <p class="game-end-text" id="stats-points"></p>
+                <p class="error">Ülesanne = Tegelik vastus (antud vastus)</p>
+                <a href='../index.html' id="link"><button id="back-button">Avalehele</button></a>
+            </dialog>
+        </div>
+    </body>
+    <footer></footer>
+</html>
